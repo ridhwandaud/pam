@@ -32,7 +32,7 @@
             <div class="tabs">
                 <ul class="nav nav-tabs">
                   <li role="presentation" class="active"><a href="/profile">Feed</a></li>
-                  <li role="presentation"><a href="#">Profile</a></li>
+                  <li role="presentation"><a href="/user">User</a></li>
                   <li role="presentation"><a href="#">Messages</a></li>
                 </ul>
                 <div class="tab-content">

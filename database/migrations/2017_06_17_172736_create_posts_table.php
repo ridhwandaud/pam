@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddDateinoutInventoryTable extends Migration
+class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class AddDateinoutInventoryTable extends Migration
      */
     public function up()
     {
-        Schema::table('inventories', function (Blueprint $table) {
-            $table->datetime('date_in')->nullable();
-            $table->datetime('date_out')->nullable();
-            $table->integer('user_id')->nullable();
+        Schema::create('Posts', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('content');
+            $table->integer('user_id')->unsigned()->index();
+            $table->timestamps();
         });
     }
 
@@ -27,8 +28,6 @@ class AddDateinoutInventoryTable extends Migration
      */
     public function down()
     {
-        Schema::table('inventories', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('Posts');
     }
 }

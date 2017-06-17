@@ -45,7 +45,7 @@
                     </div>
                    
                 </div>
-                <div class="panel panel-default feed">
+                <div class="panel panel-default feed hide">
                     <div class="panel-body">
                         <div class="feed-user">
                             <img class="img_thumbnail" src="{{$currentUser->img_path}}" height="50">
@@ -59,22 +59,22 @@
 
                         <div class="engagement">
                             <div class="row">
-                                <div class="col-md-1">
+                                <div class="col-xs-3">
                                     <div class="row">
-                                        <div class="col-md-1">
+                                        <div class="col-xs-1">
                                             <div class="glyphicon glyphicon-thumbs-up icon-like" aria-hidden="true"></div>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-xs-1">
                                             <p>Like</p>
                                         </div>
                                     </div>
                                 </div>
-                                 <div class="col-md-1">
+                                 <div class="col-xs-3">
                                     <div class="row">
-                                        <div class="col-md-1">
+                                        <div class="col-xs-1">
                                             <div class="glyphicon glyphicon-comment icon-comment" aria-hidden="true"></div>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-xs-1">
                                             <p>Comment</p>
                                         </div>
                                     </div>
@@ -86,10 +86,10 @@
 
                         <div class="comment">
                             <div class="row">
-                                <div class="col-md-1">
+                                <div class="col-md-1 col-xs-2">
                                     <img class="img_thumbnail" src="{{$currentUser->img_path}}" height="30">
                                 </div>
-                                <div class="col-md-11">
+                                <div class="col-md-11 col-xs-10">
                                     <input class="form-control" type="text">
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
 
                     </div> 
                 </div>
-                 <div class="panel panel-default feed">
+                 <div class="panel panel-default feed hide">
                     <div class="panel-body">
                         <div class="feed-user">
                             <img class="img_thumbnail" src="{{$currentUser->img_path}}" height="50">
@@ -114,6 +114,21 @@
                         
                     </div> 
                 </div>
+
+                @foreach($posts as $post)
+                <div class="panel panel-default feed">
+                    <div class="panel-body">
+                        <div class="feed-user">
+                            <img class="img_thumbnail" src="{{$post->user->img_path}}" height="50">                            
+                            <p class="feed-name">{{$post->user->name}}</p>
+                            <p>{{$post->created_at}}</p>
+                        </div>
+                        <p class="feed-text" role="alert">
+                            {{$post->content}}
+                        </p>
+                    </div> 
+                </div>
+                @endforeach
             </div>
         </div>
     </div>

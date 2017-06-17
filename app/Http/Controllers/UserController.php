@@ -13,6 +13,8 @@ class UserController extends Controller
     public function index(){
     	$currentUser = app('Illuminate\Contracts\Auth\Guard')->user();
 
-    	return view('user.index',compact('currentUser'));
+    	$posts = \App\Post::all();
+
+    	return view('user.index',compact('currentUser','posts'));
     }
 }

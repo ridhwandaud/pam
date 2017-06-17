@@ -34,11 +34,6 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
@@ -54,6 +49,11 @@
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
                                         <a href="/profile">Profile</a>
+                                    </li>
+                                    
+                                    <hr>
+                                    <li>
+                                        <a href="/settings/profile">Settings</a>
                                     </li>
                                     <li>
                                         <a href="{{ route('logout') }}"

@@ -29,7 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'Hr System') }}
                     </a>
                 </div>
 
@@ -53,6 +53,9 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                        <a href="/profile">Profile</a>
+                                    </li>
+                                    <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -63,6 +66,7 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+                                    
                                 </ul>
                             </li>
                         @endif

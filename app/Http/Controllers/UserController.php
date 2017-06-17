@@ -22,14 +22,18 @@ class UserController extends Controller
 
     public function postToFeed(Request $request)
 	{	
-	  $user = Auth::user();
 
-	  return $user;
+		$this->validate($request, [
+	        'content' => 'required',
+	    ]);
 
-	  $message = $user->messages()->create([
+
+	  	$user = Auth::user();
+
+	  	$message = $user->messages()->create([
 	    'content' => $request->input('content')
-	  ]);
+	  	]);
 
-	  return ['status' => 'Message Sent!'];
+	  	return ['status' => 'Message Sent!'];
 	}
 }

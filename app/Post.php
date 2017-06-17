@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-	protected $fillable = ['message'];
+	protected $fillable = ['content'];
 
 	protected $dates = [
         'created_at',

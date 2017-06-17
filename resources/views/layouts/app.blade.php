@@ -43,6 +43,18 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                     <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                                </a>
+                                <ul class="dropdown-menu notifications" role="menu">
+                                    <div class="header clearfix">
+                                        <strong>Notifications</strong>
+                                        <a href="">Mark All as Read</a>
+                                        <a href="">Settings</a>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -51,7 +63,7 @@
                                         <a href="/profile">Profile</a>
                                     </li>
                                     
-                                    <hr>
+                                    <li role="separator" class="divider"></li>
                                     <li>
                                         <a href="/settings/profile">Settings</a>
                                     </li>

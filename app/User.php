@@ -30,4 +30,9 @@ class User extends Authenticatable
     protected $dates = [
         'updated_at',
     ];
+
+    public function messages()
+    {
+      return $this->hasMany(Post::class);
+    }
 }

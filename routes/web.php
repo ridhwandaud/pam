@@ -21,3 +21,5 @@ Auth::routes();
 Route::get('profile','UserController@index');
 
 Route::get('user','EmployeeController@index');
+
+Route::post('messages', 'UserController@postToFeed');

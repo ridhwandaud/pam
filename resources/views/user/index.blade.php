@@ -98,6 +98,22 @@
 
                     </div> 
                 </div>
+                 <div class="panel panel-default feed">
+                    <div class="panel-body">
+                        <div class="feed-user">
+                            <img class="img_thumbnail" src="{{$currentUser->img_path}}" height="50">
+                            <div class="glyphicon glyphicon-bullhorn icon-announcement" aria-hidden="true"></div>
+                            
+                            <p class="feed-name">{{$currentUser->name}}</p>
+                            <p>{{$currentUser->created_at}}</p>
+                        </div>
+                        
+                        <p class="feed-text alert alert-success" role="alert">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante metus, vulputate eu tempus sit amet, consequat vitae ligula. Etiam nulla neque, mollis sit amet dui sed, suscipit faucibus diam. Suspendisse eu dolor non quam venenatis pharetra. Donec euismod id purus pulvinar commodo. Suspendisse dapibus commodo malesuada. Nullam pulvinar velit ac orci ultrices molestie. Etiam sit amet lorem non elit iaculis pretium vel quis enim. Nunc vel bibendum quam, et maximus odio.
+                        </p>
+                        
+                    </div> 
+                </div>
             </div>
         </div>
     </div>

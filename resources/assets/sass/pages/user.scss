@@ -3,3 +3,31 @@
 	font-weight:bold;
 	padding-top:16px;
 }
+
+.feed{
+	margin-top:16px;
+	margin-bottom:16px;
+	
+	.feed-user{
+		margin-bottom: 11px;
+		height: auto;
+
+		.img_thumbnail{
+			float: left;
+			margin-right: 8px;
+		}
+
+		.feed-name{
+			font-size: 14px;
+			font-weight: bold;
+			color: #365899;
+
+			margin-bottom: 0;
+		}
+	}
+	
+
+	.feed-text{
+		clear: both;
+	}
+}

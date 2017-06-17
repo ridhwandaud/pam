@@ -15,7 +15,7 @@ class UserController extends Controller
     public function index(){
     	$currentUser = app('Illuminate\Contracts\Auth\Guard')->user();
 
-    	$posts = \App\Post::all();
+    	$posts = \App\Post::orderBy('created_at','desc')->get();
 
     	return view('user.index',compact('currentUser','posts'));
     }
@@ -34,6 +34,6 @@ class UserController extends Controller
 	    'content' => $request->input('content')
 	  	]);
 
-	  	return ['status' => 'Message Sent!'];
+	  	return back();
 	}
 }

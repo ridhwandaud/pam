@@ -51,6 +51,29 @@
                                         <a href="">Mark All as Read</a>
                                         <a href="">Settings</a>
                                     </div>
+                                    <li role="separator" class="divider"></li>
+                                    <div class="clearfix msg-list">
+                                        <a href="/article">
+                                            <div class="img-area">
+                                                <img class="img-circle" src="{{ Auth::user()->img_path }}" height="50">
+                                            </div>
+                                            <div class="msg-area">
+                                                <div>Ridhwan post a new article</div>
+                                                <span>1 min ago</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="clearfix msg-list">
+                                        <a href="/article">
+                                            <div class="img-area">
+                                                <img class="img-circle" src="{{ asset('images/user/2.png') }}" height="50">
+                                            </div>
+                                            <div class="msg-area">
+                                                <div>Abu reply to your post.</div>
+                                                <span>1 day ago</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </ul>
                             </li>
                             <li class="dropdown">

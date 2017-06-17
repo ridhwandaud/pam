@@ -12,6 +12,28 @@ hr.dropdown{
 	
 	&.notifications{
 		width:316px;
+
+		.msg-list{
+			padding:10px 12px;
+		}
+		
+		.img-area{
+			float:left;
+			width:36px;
+		}
+
+		.msg-area{
+			float:right;
+			width:230px;
+
+			span{
+				font-style:italic;
+				text-align:right;
+				font-size:11px;
+				display: block;
+			} 
+		}
+
 	}
 
 	.header{
@@ -23,6 +45,7 @@ hr.dropdown{
 
 		a{
 			float:right;
+			margin-left: 12px;
 		}
 	}
 	

@@ -121,7 +121,7 @@
                         <div class="feed-user">
                             <img class="img_thumbnail" src="{{$post->user->img_path}}" height="50">                            
                             <p class="feed-name">{{$post->user->name}}</p>
-                            <p>{{$post->created_at}}</p>
+                            <p>{{$post->created_at->diffForHumans()}}</p>
                         </div>
                         <p class="feed-text" role="alert">
                             {{$post->content}}

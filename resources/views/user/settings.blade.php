@@ -4,16 +4,20 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
-            <form action="/settings/profile" method="POST">
-                {{ csrf_field() }}
+           
+               
                 <div class="panel panel-default">
                     <div class="panel-heading">Profile</div>
 
                     <div class="panel-body">
-                        <div class="avatar text-center">
-                            <img src="{{$user->img_path}}" alt="" height="100" class="img-circle">
-                            <!-- <input type="file" name="img_path" value="upload new picture"> -->
-                        </div>
+                        <form action="/avatar" method="POST" enctype="multipart/form-data">
+                            {{ csrf_field() }}
+                            <div class="avatar text-center">
+                                <img src="/{{$user->img_path}}" alt="" height="100" class="img-circle">
+                                <input type="file" name="avatar" value="upload new picture">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </div>
+                        </form>
                         <div class="form-group">
                             <label for="">Name</label>
                             <input class="form-control" value="{{$user->name}}" name="name">
@@ -52,7 +56,6 @@
                 <div class="form-group">
                     <button class="btn btn-primary">Update Profile</button>
                 </div>
-            </form>
         </div>
     </div>
 </div>

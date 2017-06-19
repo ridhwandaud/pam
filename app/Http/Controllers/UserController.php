@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
@@ -59,6 +60,21 @@ class UserController extends Controller
 		$user->job_position = $request->get('job_position');
 
 		$user->info = $request->get('info');
+
+		$user->save();
+
+		return back();
+	}
+
+	public function postAvatar()
+	{
+		$user = Auth::user();
+
+		$img_path = request()->file('avatar')->storeAs('/public','asd');
+
+		return $img_path;
+
+		$user->img_path = $img_path;
 
 		$user->save();
 

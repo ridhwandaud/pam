@@ -5,6 +5,7 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <form action="/settings/profile" method="POST">
+                {{ csrf_field() }}
                 <div class="panel panel-default">
                     <div class="panel-heading">Profile</div>
 

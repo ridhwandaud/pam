@@ -50,6 +50,14 @@ class UserController extends Controller
 
 		$user = Auth::user();
 
-		return view('user.settings',compact('user'));
+		$user->address = $request->get('address');
+
+		$user->mobile_number = $request->get('mobile_number');
+
+		$user->home_number = $request->get('home_number');
+
+		$user->save();
+
+		return back();
 	}
 }

@@ -26,3 +26,10 @@ Route::get('user','EmployeeController@index');
 Route::get('/profile/messages', 'ChatsController@index');
 Route::get('messages', 'ChatsController@fetchMessages');
 Route::post('messages', 'ChatsController@sendMessage');
+
+Route::post('feeds', 'UserController@postToFeed');
+
+Route::get('settings/profile','UserController@getSettings');
+
+Route::post('settings/profile','UserController@postSettings');
+

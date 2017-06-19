@@ -38,8 +38,16 @@
                 <div class="tab-content">
                     <div class="row">
                         <div class="col-md-12">
-                             <form action="">
-                                <input class="form-control" type="text" placeholder="Ask anything here @ for tag someone">
+                             <form action="/feeds" method="POST">
+                                {{ csrf_field() }}
+
+                                <div class="form-group">
+                                    <input class="form-control" name="content" type="text" placeholder="Ask anything here @ for tag someone">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Post to feed</button>
+                                </div>
+
                             </form>
                         </div>
                     </div>

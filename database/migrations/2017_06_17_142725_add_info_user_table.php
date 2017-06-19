@@ -14,12 +14,12 @@ class AddInfoUserTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('info')->nullable;
-            $table->string('job_position')->nullable;
-            $table->integer('mobile_number')->nullable;
-            $table->integer('home_number')->nullable;
-            $table->string('address')->nullable;
-            $table->string('img_path')->nullable;
+            $table->string('info')->nullable();
+            $table->string('job_position')->nullable();
+            $table->integer('mobile_number')->nullable();
+            $table->integer('home_number')->nullable();
+            $table->string('address')->nullable();
+            $table->string('img_path')->nullable();
         });
     }
 

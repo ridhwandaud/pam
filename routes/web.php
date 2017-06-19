@@ -21,3 +21,8 @@ Auth::routes();
 Route::get('profile','UserController@index');
 
 Route::get('user','EmployeeController@index');
+
+
+Route::get('/profile/messages', 'ChatsController@index');
+Route::get('messages', 'ChatsController@fetchMessages');
+Route::post('messages', 'ChatsController@sendMessage');

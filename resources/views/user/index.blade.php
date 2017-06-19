@@ -33,7 +33,7 @@
                 <ul class="nav nav-tabs">
                   <li role="presentation" class="active"><a href="/profile">Feed</a></li>
                   <li role="presentation"><a href="/user">User</a></li>
-                  <li role="presentation"><a href="#">Messages</a></li>
+                  <li role="presentation"><a href="/profile/messages">Messages</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="row">

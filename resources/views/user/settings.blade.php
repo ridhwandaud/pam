@@ -11,7 +11,7 @@
 
                     <div class="panel-body">
                         <div class="avatar text-center">
-                            <img src="/{{$user->img_path}}" alt="" height="100" class="img-circle">
+                            <img src="{{$user->img_path}}" alt="" height="100" class="img-circle">
                             <!-- <input type="file" name="img_path" value="upload new picture"> -->
                         </div>
                         <div class="form-group">

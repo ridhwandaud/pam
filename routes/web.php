@@ -23,3 +23,7 @@ Route::get('profile','UserController@index');
 Route::get('user','EmployeeController@index');
 
 Route::post('messages', 'UserController@postToFeed');
+
+Route::get('settings/profile','UserController@getSettings');
+
+Route::post('settings/profile','UserController@postSettings');

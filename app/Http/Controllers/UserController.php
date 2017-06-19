@@ -31,9 +31,25 @@ class UserController extends Controller
 	  	$user = Auth::user();
 
 	  	$message = $user->messages()->create([
-	    'content' => $request->input('content')
+	    	'content' => $request->input('content')
 	  	]);
 
 	  	return back();
+	}
+
+	public function getSettings()
+	{
+		$user = Auth::user();
+
+		return view('user.settings',compact('user'));
+	}
+
+	public function postSettings(Request $request)
+	{
+
+
+		$user = Auth::user();
+
+		return view('user.settings',compact('user'));
 	}
 }

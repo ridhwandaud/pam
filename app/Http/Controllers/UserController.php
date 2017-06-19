@@ -56,6 +56,10 @@ class UserController extends Controller
 
 		$user->home_number = $request->get('home_number');
 
+		$user->job_position = $request->get('job_position');
+
+		$user->info = $request->get('info');
+
 		$user->save();
 
 		return back();

@@ -22,9 +22,14 @@
                             <label for="">Email</label>
                             <input class="form-control" value="{{$user->email}}" name="email">
                         </div>
-                        
-                        <p>{{$user->job_position}}</p>
-                        <p>{{$user->info}}</p>
+                        <div class="form-group">
+                            <label for="">Job position</label>
+                            <input class="form-control" value="{{$user->job_position}}" name="job_position">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Info</label>
+                            <input class="form-control" value="{{$user->info}}" name="info">
+                        </div>
                     </div>   
                 </div>
                 <div class="panel panel-default">

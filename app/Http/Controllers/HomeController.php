@@ -23,6 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $projects = \App\Project::orderBy('created_at','asc')->get();
+
+        return view('dashboard.home',compact('projects'));
     }
 }

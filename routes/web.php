@@ -12,7 +12,7 @@
 */
 
 
-// Home
+// Home @also get proejects
 Route::get('/', 'HomeController@index')->name('home');
 
 // Auth
@@ -42,3 +42,7 @@ Route::get('/profile/messages', 'ChatsController@index');
 Route::get('messages', 'ChatsController@fetchMessages');
 
 Route::post('messages', 'ChatsController@sendMessage');
+
+
+//Project
+Route::post('projects','ProjectController@postProjects');

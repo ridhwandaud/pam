@@ -47,8 +47,7 @@ class UserController extends Controller
 
 	public function postSettings(Request $request)
 	{
-
-
+		
 		$user = Auth::user();
 
 		$user->address = $request->get('address');

@@ -11,4 +11,8 @@ class Project extends Model
 	protected $dates = [
         'created_at',
     ];
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
 }

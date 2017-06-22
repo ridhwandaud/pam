@@ -46,3 +46,5 @@ Route::post('messages', 'ChatsController@sendMessage');
 
 //Project
 Route::post('projects','ProjectController@postProjects');
+
+Route::get('projects/{id}','ProjectController@editProjects');

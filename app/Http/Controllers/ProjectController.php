@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Project;
 
 class ProjectController extends Controller
 {
@@ -22,6 +23,23 @@ class ProjectController extends Controller
 
 	  	return back();
 
+    }
+
+    public function editProjects($id){
+
+    	$user = Auth::user();
+
+    	$project = Project::where('id',$id)->firstOrFail();
+
+    	if($user->id === $project->user_id)
+    	{
+    		return $project->user_id;
+    	}
+    	else{
+    		return "error";
+    	}
+
+    	
     }
 
 }

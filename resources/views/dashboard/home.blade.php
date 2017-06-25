@@ -6,7 +6,7 @@
         <div class="row">
             <ol class="breadcrumb">
                 <li>
-                    <a href="/profile">Setting</a>
+                    <a href="/">Home</a>
                 </li>
                 <li class="active">
                     Project

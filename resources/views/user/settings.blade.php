@@ -13,7 +13,7 @@
                         <form action="/avatar" method="POST" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="avatar text-center">
-                                <img src="/{{$user->img_path}}" alt="" height="100" class="img-circle">
+                                <img src="{{$user->img_path}}" alt="" height="100" class="img-circle">
                                 <input type="file" name="avatar" value="upload new picture">
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </div>

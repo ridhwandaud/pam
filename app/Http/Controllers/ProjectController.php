@@ -29,15 +29,22 @@ class ProjectController extends Controller
 
     	$user = Auth::user();
 
-    	$project = Project::where('id',$id)->firstOrFail();
+        try{
+            $project = Project::where('id',$id)->firstOrFail();
 
-    	if($user->id === $project->user_id)
-    	{
-    		return $project->user_id;
-    	}
-    	else{
-    		return "error";
-    	}
+            if($user->id === $project->user_id)
+            {
+                return view('projects.edit',compact('project'));
+            }
+            else{
+                $error_msg  = 'You do not have access to this project';
+                return view('projects.error',compact('error_msg'));
+            }
+        }catch(\Exception $e){
+            $error_msg  = 'Project not found';
+            return view('projects.error',compact('error_msg'));                 
+        }
+    	
 
     	
     }

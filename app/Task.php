@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
+class Task extends Model
 {
-    protected $fillable = ['project_name','project_type','project_pic','project_location'];
+    protected $fillable = ['task_name','task_type','task_deadline','task_priority'];
 
 	protected $dates = [
         'created_at',

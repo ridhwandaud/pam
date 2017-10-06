@@ -4,28 +4,28 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Project;
+use App\Task;
 
-class ProjectController extends Controller
+class TaskController extends Controller
 {
-    public function postProjects(Request $request){
+    public function postTasks(Request $request){
 
     	$input = $request->all();
 
     	$user = Auth::user();
 
-	  	$project = $user->projects()->create([
-	    	'project_name' => $input['project_name'],
-	    	'project_type' => $input['project_type'],
-	    	'project_location' => $input['project_location'],
-	    	'project_pic' => $input['project_pic']
+	  	$task = $user->tasks()->create([
+	    	'task_name' => $input['task_name'],
+	    	'task_type' => $input['task_type'],
+	    	'task_deadline' => $input['task_deadline'],
+	    	'task_priority' => $input['task_priority']
 	  	]);
 
 	  	return back();
 
     }
 
-    public function editProjects($id){
+    public function editTask($id){
 
     	$user = Auth::user();
 

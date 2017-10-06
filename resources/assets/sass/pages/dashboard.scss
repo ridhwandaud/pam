@@ -1,0 +1,32 @@
+.navbar{
+	&.navbar-breadcrumb{
+		margin-top: -22px;
+	    background-color: #fff;
+	    margin-bottom: 40px;
+	    box-shadow: 0 1px 0 0 #fff;
+	    border-radius: 0;
+	    padding: 10px 0px;
+	}
+
+	.breadcrumb {
+	    padding: 8px 15px;
+	    margin-bottom: 0px;
+	    background-color: transparent;
+	    border-radius: 0px;
+	    color:#000;
+
+	    li{
+	    	a{
+	    		color:#000;
+	    	}
+
+	    	&li:before{
+	    		color:#000;
+	    	}
+	    }
+	}
+
+	&.navbar-default{
+		border: 0px;
+	}
+}

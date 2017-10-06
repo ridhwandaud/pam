@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<nav class="navbar navbar">
+<nav class="navbar navbar-breadcrumb">
     <div class="container">
         <div class="row">
             <ol class="breadcrumb">
                 <li>
                     <a href="/">Home</a>
                 </li>
-                <li class="active">
+                <li>
                     Project
                 </li>
             </ol>  
@@ -60,7 +60,7 @@
     <div class="row">
         <div class="col-md-12 clearfix">
             <div class="pull-right">
-                <button class="btn btn-success" data-toggle="modal" data-target="#projectModal">Create new Project</button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal">Create new Project</button>
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@
                 <input class="form-control" type="text" name="project_pic">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                 <button type="submit" class="btn btn-primary">Create a new Project</button>
             </div>
         </form>

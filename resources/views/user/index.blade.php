@@ -5,17 +5,19 @@
     <div class="row">
         <div class="col-md-3">
             <div class="panel panel-default">
-                <div class="panel-heading">Profile</div>
+<!--                 <div class="panel-heading">Profile</div> -->
 
-                <div class="panel-body">
+                <div class="panel-body text-center">
+                    <p class="p-name">{{$currentUser->name}}</p>
+                    <p>{{$currentUser->job_position}}</p>
                     <div class="avatar text-center">
                         <img src="{{$currentUser->img_path}}" alt="" height="100" class="img-circle">
                     </div>
-                    <p class="p-name">{{$currentUser->name}}</p>
-                    <span class="label label-danger">Offline</span>
-                    <!-- <span class="label label-success">Online</span> -->
-                    <p>{{$currentUser->job_position}}</p>
-                    <p>{{$currentUser->info}}</p>
+                    
+                    <p class="p-info">{{$currentUser->info}}</p>
+                    <!-- <span class="label label-danger">Offline</span> -->
+                    <span class="label label-success">Online</span>
+                    
                 </div>   
             </div>
             <div class="panel panel-default">

@@ -80,10 +80,10 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                      <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
-                                </a>
-                                <ul class="dropdown-menu notifications" role="menu">
+                                </a> -->
+                                <!-- <ul class="dropdown-menu notifications" role="menu">
                                     <div class="header clearfix">
                                         <strong>Notifications</strong>
                                         <a href="">Mark All as Read</a>
@@ -112,7 +112,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -132,7 +132,7 @@
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                            Sign Out
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

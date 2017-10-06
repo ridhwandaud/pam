@@ -36761,7 +36761,7 @@ var Component = __webpack_require__(9)(
   /* cssModules */
   null
 )
-Component.options.__file = "/var/www/html/hr-system/resources/assets/js/components/ChatForm.vue"
+Component.options.__file = "/Users/maideasy/Desktop/Personal/Web/laravel/hr-system/resources/assets/js/components/ChatForm.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ChatForm.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -36795,7 +36795,7 @@ var Component = __webpack_require__(9)(
   /* cssModules */
   null
 )
-Component.options.__file = "/var/www/html/hr-system/resources/assets/js/components/ChatMessages.vue"
+Component.options.__file = "/Users/maideasy/Desktop/Personal/Web/laravel/hr-system/resources/assets/js/components/ChatMessages.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ChatMessages.vue: functional components are not supported with templates, they should use render functions.")}
 

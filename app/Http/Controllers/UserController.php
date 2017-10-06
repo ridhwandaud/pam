@@ -52,6 +52,8 @@ class UserController extends Controller
 
 		$user->address = $request->get('address');
 
+		$user->name = $request->get('name');
+
 		$user->mobile_number = $request->get('mobile_number');
 
 		$user->home_number = $request->get('home_number');

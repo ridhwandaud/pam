@@ -50,6 +50,7 @@
                             <td>{{$task->task_type}}</td>
                             <td>{{$task->task_deadline}}</td>
                             <td>{{$task->task_priority}}</td>
+                            <td><a href="/task/{{$task->id}}">Edit</a></td>
                         </tr>
                         @endforeach
                     </tbody>

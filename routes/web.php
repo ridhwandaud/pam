@@ -47,4 +47,6 @@ Route::post('messages', 'ChatsController@sendMessage');
 //Project
 Route::post('tasks','TaskController@postTasks');
 
-Route::get('projects/{id}','ProjectController@editProjects');
+Route::get('task/{id}','TaskController@getTask');
+
+Route::post('edit/{id}','TaskController@editTask');

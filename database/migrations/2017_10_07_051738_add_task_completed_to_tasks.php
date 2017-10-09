@@ -13,8 +13,8 @@ class AddTaskCompletedToTasks extends Migration
      */
     public function up()
     {
-        Schema::table('taks', function (Blueprint $table) {
-            $table->bool('completed');
+        Schema::table('tasks', function (Blueprint $table) {
+            $table->boolean('completed');
         });
     }
 
